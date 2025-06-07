@@ -31,8 +31,10 @@ project "yaml-cpp"
 
 	filter "configurations:Debug"
 		runtime "Debug"
+        defines "yaml_cpp_EXPORTS"
 		symbols "on"
 
 	filter "configurations:Release"
 		runtime "Release"
+        defines "yaml_cpp_EXPORTS"
 		optimize "on"
