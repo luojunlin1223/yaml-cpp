@@ -5,3 +5,6 @@ build/
 ##
 bin/
 bin-int/
+
+yaml-cpp.vcxproj
+yaml-cpp.vcxproj.filters

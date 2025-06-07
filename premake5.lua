@@ -1,4 +1,4 @@
-project "yaml-cpp"
+project "yaml_cpp"
 	kind "StaticLib"
 	language "C++"
 
@@ -30,11 +30,11 @@ project "yaml-cpp"
 		staticruntime "off"
 
 	filter "configurations:Debug"
+        defines "YAML_CPP_STATIC_DEFINE"
 		runtime "Debug"
-        defines "yaml_cpp_EXPORTS"
 		symbols "on"
 
 	filter "configurations:Release"
+        defines "YAML_CPP_STATIC_DEFINE"
 		runtime "Release"
-        defines "yaml_cpp_EXPORTS"
 		optimize "on"
